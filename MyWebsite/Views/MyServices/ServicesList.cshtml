@@ -1,0 +1,18 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<MyService>
+@using EntityLayer.Concrete
+
+@foreach (var x in Model)
+{
+    <div class="col-lg-4 service-in text-center" data-aos="flip-up">
+        <div class="card">
+            <div class="card-body">
+                <i class="fas fa-list-ul mb-4"></i>
+                <h5 class="card-title text-uppercase">@x.ServiceName</h5>
+                <p class="card-text">@x.ServiceDescription</p>
+            </div>
+        </div>
+    </div>
+}
+

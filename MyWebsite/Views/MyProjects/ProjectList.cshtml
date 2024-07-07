@@ -1,0 +1,22 @@
+﻿@using EntityLayer.Concrete
+@model List<MyProjects>
+@foreach (var x in Model)
+{
+    <div class="col-md-4" data-aos="zoom-in">
+        <a class="text-primary font-weight-bold text-center"  href="/MyProjects/ProjectDetails/@x.ProjectID">@x.ProjectName</a>
+        <div class="section_1_gallery_grid">
+            <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="@x.ProjectIMG1">
+                <div class="">
+                    <a href="/MyProjects/ProjectDetails/@x.ProjectID">
+                        <img src="@x.ProjectIMG1" alt=" " class="img-fluid" />
+                        <div class="proj_gallery_grid1_pos">
+                            <h3>Click For Details...</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </a>
+        </div>
+    </div>
+
+}

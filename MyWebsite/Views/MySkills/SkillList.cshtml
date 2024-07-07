@@ -1,0 +1,41 @@
+﻿@using EntityLayer.Concrete
+@model List<MySkills>
+@foreach (var x in Model)
+{
+    string color = "";
+    int id = x.SkillID;
+
+    switch (id)
+    {
+        case 6:
+            color = "bg-primary";
+            break;
+        case 7:
+            color = "bg-warning";
+            break;
+        case 3:
+            color = "bg-success";
+            break;
+        case 9:
+            color = "bg-info";
+            break;
+        case 10:
+            color = "bg-secondary";
+            break;
+        case 11:
+            color = "bg-danger";
+            break;
+
+    }
+
+
+
+    <div class="col-lg-4 progress-info-content text-left">
+        <div class="progress-one my-lg-5" data-aos="fade-up">
+            <h4 class="progress-tittle-w3">@x.SkillName</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped @color" role="progressbar" style="width: @x.SkillValue%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+}

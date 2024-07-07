@@ -1,0 +1,62 @@
+﻿@model EntityLayer.Concrete.MyProjects
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/deskapp2-master/vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="~/deskapp2-master/vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/deskapp2-master/src/plugins/fancybox/dist/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="~/deskapp2-master/vendors/styles/style.css">
+</head>
+<body>
+    <div class="mobile-menu-overlay"></div>
+    <div style="padding:0.5em 2em 0em 2em" class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="min-height-200px">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="title">
+                                <h4 style="text-align:center">Galeri</h4>
+                            </div>
+                            <nav aria-label="breadcrumb" role="navigation">
+                                <ol class="breadcrumb">
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-wrap">
+                    <ul class="row">
+                        <li class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="da-card box-shadow">
+                                    <div class="da-card-photo">
+                                        <img src="@Model.ProjectIMG1" alt="">
+                                        <div class="da-overlay">
+                                            <div class="da-social">
+                                                <ul class="clearfix">
+                                                    <li><a href="@Model.ProjectIMG1" data-fancybox="images"><i class="fa fa-picture-o"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/deskapp2-master/vendors/scripts/core.js"></script>
+    <script src="~/deskapp2-master/vendors/scripts/script.min.js"></script>
+    <script src="~/deskapp2-master/vendors/scripts/process.js"></script>
+    <script src="~/deskapp2-master/vendors/scripts/layout-settings.js"></script>
+    <script src="~/deskapp2-master/src/plugins/fancybox/dist/jquery.fancybox.js"></script>
+</body>
+</html>
