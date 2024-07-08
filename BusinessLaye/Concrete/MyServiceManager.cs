@@ -26,6 +26,11 @@ namespace BusinessLaye.Concrete
             _iservicedal.Remove(service);
         }
 
+        public MyService GetService(int id)
+        {
+            return _iservicedal.Get(x => x.ServiceID == id);
+        }
+
         public List<MyService> ServicesList()
         {
             return _iservicedal.List();

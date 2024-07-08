@@ -1,0 +1,30 @@
+﻿@using EntityLayer.Concrete
+@model List<MyProjects>
+@{
+    ViewBag.Title = "ProjectList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Project Name</th>
+        <th>Project Description</th>
+        <th>Edit</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+            <td>@x.ProjectID</td>
+            <td>@x.ProjectName</td>
+            <td>@x.ProjectDescription</td>
+            <td><a class="btn btn-primary" href="/Admin/EditProject/@x.ProjectID">Update</a></td>
+            <td><a class="btn btn-danger" href="/Admin/DeleteProject/@x.ProjectID">Delete</a></td>
+        </tr>
+
+    }
+</table>
+<div style="padding-left:1em" >
+    <a href="/Admin/AddProject" class="btn btn-success">New Project</a>
+</div>

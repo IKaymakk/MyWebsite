@@ -1,0 +1,21 @@
+﻿@model EntityLayer.Concrete.MyService
+@{
+    ViewBag.Title = "EditService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div style="padding:2em 2em 2em 2em">
+
+    @using (Html.BeginForm("EditService", "Admin", FormMethod.Post))
+    {
+        @Html.TextBoxFor(x => x.ServiceID, new { @readonly = "readonly", @style = "max-width:30%", @class = "form-control" })
+        <hr />
+        <hr />
+        @Html.Label("Service Name")
+        @Html.TextBoxFor(x => x.ServiceName, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Service Description")
+        @Html.TextBoxFor(x => x.ServiceDescription, new { @class = "form-control" })
+        <hr />
+        <button class="btn btn-primary">Submit</button>
+    }
+</div>

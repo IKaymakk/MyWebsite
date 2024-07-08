@@ -1,0 +1,54 @@
+﻿@model EntityLayer.Concrete.MyProjects
+
+@{
+    ViewBag.Title = "EditProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="padding:2em 2em 2em 2em">
+
+    @using (Html.BeginForm("EditProject", "Admin", FormMethod.Post))
+    {
+        @Html.TextBoxFor(x => x.ProjectID, new { @readonly = "readonly", @style = "max-width:30%", @class = "form-control" })
+        <hr />
+        <hr />
+        @Html.Label("Project Name")
+        @Html.TextBoxFor(x => x.ProjectName, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Description")
+        @Html.TextBoxFor(x => x.ProjectDescription, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img1")
+        @Html.TextBoxFor(x => x.ProjectIMG1, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img2")
+        @Html.TextBoxFor(x => x.ProjectIMG2, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img3")
+        @Html.TextBoxFor(x => x.ProjectIMG3, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img4")
+        @Html.TextBoxFor(x => x.ProjectIMG4, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img5")
+        @Html.TextBoxFor(x => x.ProjectIMG5, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img6")
+        @Html.TextBoxFor(x => x.ProjectIMG6, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img7")
+        @Html.TextBoxFor(x => x.ProjectIMG7, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img8")
+        @Html.TextBoxFor(x => x.ProjectIMG8, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img9")
+        @Html.TextBoxFor(x => x.ProjectIMG9, new { @class = "form-control" })
+        <hr />
+        @Html.Label("Project Img10")
+        @Html.TextBoxFor(x => x.ProjectIMG10, new { @class = "form-control" })
+        <hr />
+        <button class="btn btn-primary">Submit</button>
+    }
+</div>
+

@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Concrete
+@model List<MyService>
+@{
+    ViewBag.Title = "ServicesList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Service Name</th>
+        <th>Service Description</th>
+        <th>Edit</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+            <td>@x.ServiceID</td>
+            <td>@x.ServiceName</td>
+            <td>@x.ServiceDescription</td>
+            <td><a class="btn btn-primary" href="/Admin/EditService/@x.ServiceID">Update</a></td>
+        </tr>
+
+    }
+</table>
+

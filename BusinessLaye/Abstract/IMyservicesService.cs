@@ -13,5 +13,6 @@ namespace BusinessLaye.Abstract
         void AddService (MyService service);
         void UpdateService (MyService service);
         void DeleteService (MyService service);
+        MyService GetService(int id);
     }
 }
