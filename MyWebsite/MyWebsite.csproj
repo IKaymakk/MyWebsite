@@ -133,6 +133,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProjectsController.cs" />
     <Compile Include="Controllers\MyServicesController.cs" />
@@ -155,10 +156,12 @@
     <Content Include="deskapp2-master\503.html" />
     <Content Include="deskapp2-master\advanced-components.html" />
     <Content Include="deskapp2-master\apexcharts.html" />
+    <Content Include="deskapp2-master\app.css" />
     <Content Include="deskapp2-master\basic-table.html" />
     <Content Include="deskapp2-master\blank.html" />
     <Content Include="deskapp2-master\blog-detail.html" />
     <Content Include="deskapp2-master\blog.html" />
+    <Content Include="deskapp2-master\bootstrap.css" />
     <Content Include="deskapp2-master\calendar.html" />
     <Content Include="deskapp2-master\chat.html" />
     <Content Include="deskapp2-master\color-settings.html" />
@@ -888,6 +891,9 @@
     <Content Include="Views\MyServices\ServicesList2.cshtml" />
     <Content Include="Views\MyProjects\ProjectList.cshtml" />
     <Content Include="Views\MyProjects\ProjectDetails.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\SkillsList.cshtml" />
+    <Content Include="Views\Admin\EditSkills.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -28,6 +28,11 @@ namespace BusinessLaye.Concrete
             _iskillsdal.Remove(skill);
         }
 
+        public MySkills GetSkill(int id)
+        {
+            return _iskillsdal.Get(x => x.SkillID == id);
+        }
+
         public List<MySkills> SkillsList()
         {
             return _iskillsdal.List();

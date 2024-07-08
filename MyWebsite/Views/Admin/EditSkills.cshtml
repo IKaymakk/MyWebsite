@@ -1,0 +1,19 @@
+﻿@model EntityLayer.Concrete.MySkills
+@{
+    ViewBag.Title = "EditSkills";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div style="padding:2em 2em 2em 2em">
+    @using (Html.BeginForm("EditSkills", "Admin", FormMethod.Post))
+    {
+        @Html.TextBoxFor(x => x.SkillID, new { @class = "form-control", @readonly = "readonly" })
+        <hr />
+        @Html.Label("SkillName")
+        @Html.TextBoxFor(x => x.SkillName, new { @class = "form-control" })
+        <hr />
+        @Html.Label("SkillValue")
+        @Html.TextBoxFor(x => x.SkillValue, new { @class = "form-control" })
+        <hr />
+        <button class="btn btn-primary">Submit</button>
+    }
+</div>

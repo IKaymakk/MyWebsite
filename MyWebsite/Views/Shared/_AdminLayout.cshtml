@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="~/deskapp2-master/bootstrap.css">
+    <link rel="stylesheet" href="~/deskapp2-master/app.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-menu">
+                    <ul style="margin-top:0.2em" class="menu">
+                        <li class='sidebar-title'>Admin Menu</li>
+                        <li class="sidebar-item  ">
+                            <a href="/Admin/SkillsList" class='sidebar-link'>
+                                <i data-feather="briefcase" width="20"></i>
+                                <span>Skills</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="" class='sidebar-link'>
+                                <i data-feather="align-justify" width="20"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="" class='sidebar-link'>
+                                <i data-feather="users" width="20"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class='sidebar-title'><a href="/Home/Index">Go Home</a></li>
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="~/voler-master/dist/assets/js/feather-icons/feather.min.js"></script>
+    <script src="~/voler-master/dist/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/voler-master/dist/assets/js/app.js"></script>
+    <script src="~/voler-master/dist/assets/js/main.js"></script>
+</body>
+</html>

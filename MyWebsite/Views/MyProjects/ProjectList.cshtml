@@ -2,7 +2,7 @@
 @model List<MyProjects>
 @foreach (var x in Model)
 {
-    <div class="col-md-4" data-aos="zoom-in">
+    <div class="col-md-4" >
         <a class="text-primary font-weight-bold text-center"  href="/MyProjects/ProjectDetails/@x.ProjectID">@x.ProjectName</a>
         <div class="section_1_gallery_grid">
             <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="@x.ProjectIMG1">
