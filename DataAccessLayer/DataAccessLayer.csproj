@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IProjectsDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
@@ -58,12 +59,17 @@
     <Compile Include="Abstract\ISkillsDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\GenericRepository.cs" />
+    <Compile Include="EntityFramework\EFAdminDal.cs" />
     <Compile Include="EntityFramework\EfProjectsDal.cs" />
     <Compile Include="EntityFramework\EfServiceDal.cs" />
     <Compile Include="EntityFramework\EfSkillsDal.cs" />
     <Compile Include="Migrations\202407071620503_mig1.cs" />
     <Compile Include="Migrations\202407071620503_mig1.designer.cs">
       <DependentUpon>202407071620503_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407101748306_mig_Admin.cs" />
+    <Compile Include="Migrations\202407101748306_mig_Admin.designer.cs">
+      <DependentUpon>202407101748306_mig_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407071620503_mig1.resx">
       <DependentUpon>202407071620503_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407101748306_mig_Admin.resx">
+      <DependentUpon>202407101748306_mig_Admin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

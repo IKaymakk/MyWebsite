@@ -51,11 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAdminService.cs" />
     <Compile Include="Abstract\IContactService.cs" />
     <Compile Include="Abstract\IMyProjectService.cs" />
     <Compile Include="Abstract\IMyservicesService.cs" />
     <Compile Include="Abstract\IMySkillsService.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Concrete\AdminManager.cs" />
     <Compile Include="Concrete\ContactManager.cs" />
     <Compile Include="Concrete\MyProjectsManager.cs" />
     <Compile Include="Concrete\MyServiceManager.cs" />

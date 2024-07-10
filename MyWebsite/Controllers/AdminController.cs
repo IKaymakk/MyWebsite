@@ -6,9 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MyWebsite.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         MySkillsManager sm = new MySkillsManager(new EfSkillsDal());
