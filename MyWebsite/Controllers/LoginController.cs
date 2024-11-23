@@ -22,12 +22,12 @@ namespace MyWebsite.Controllers
         [HttpPost]
         public ActionResult Index(Admin p)
         {
-            var admininfo = adminmanager.GetAdmin(p.AdminName,p.AdminPassword);
-            if(admininfo != null)
+            var admininfo = adminmanager.GetAdmin(p.AdminName, p.AdminPassword);
+            if (admininfo != null)
             {
                 FormsAuthentication.SetAuthCookie(admininfo.AdminName, false);
                 Session["AdminName"] = admininfo.AdminName;
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "ProjectList");
             }
             else
             {

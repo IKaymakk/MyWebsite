@@ -1,0 +1,129 @@
+﻿#logo {
+    background-color: transparent;
+    padding: 2em;
+    margin-top: 1em;
+    border-radius: 0px;
+    background-image: url('/web/images/code (1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 71px;
+    margin-top: -0.05em;
+    transition: transform 0.5s ease; /* Dönüşüm geçişi */
+}
+
+    /* Üzerine gelindiğinde dönüş */
+    #logo:hover {
+        transform: rotate(360deg); /* 360 derece döndürme */
+    }
+
+    /* Tıklama ile dönüş */
+    #logo:active {
+        transform: rotate(360deg);
+    }
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+    #logo {
+        margin-top: -0.2em;
+        background-size: 50px;
+    }
+}
+
+/*<-!------------->
+*/
+
+/* Başlangıç renkleri ve linear gradient */
+.bg-success {
+    background: linear-gradient(45deg, #4CAF50, #388E3C, #2C6B2F) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+.bg-primary {
+    background: linear-gradient(45deg, #2196F3, #0D47A1, #1976D2) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+.bg-warning {
+    background: linear-gradient(45deg, #FFEB3B, #FF9800, #FF5722) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+.bg-info {
+    background: linear-gradient(45deg, #00B8D4, #008C9E, #006F7A) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+.bg-secondary {
+    background: linear-gradient(45deg, #7B1FA2, #8E24AA, #C2185B) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+.bg-danger {
+    background: linear-gradient(45deg, #F44336, #B71C1C, #B71C1C) ;
+    background-size: 300% 300%;
+    transition: background-position 1s ease;
+}
+
+/* Hover durumunda renk akışı */
+.progress-bar:hover {
+    background-position: 100% 100%; /* Renk geçişi sağlanır */
+}
+
+/* Yavaşça değişim */
+.progress-bar {
+    transition: background-position 1s ease;
+}
+
+.nav-honey a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+    .nav-honey a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ff4081, #ff4081);
+        border-radius:10px;
+        transition: left 0.3s ease;
+    }
+
+    /* Hover durumunda soldan sağa kayma */
+    .nav-honey a:hover::before {
+        left: 100%; /* Sağda kayıp kaybolma */
+    }
+
+    /* Hover durumunda renk değişimi ve kayma */
+    .nav-honey a:hover {
+        color: #ff4081;
+        transform: scale(1.1);
+    }
+
+    /* Alt çizgi ekleme */
+    .nav-honey a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ff4081;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-honey a:hover::after {
+        width: 100%; /* Alt çizgi görünür hale gelir */
+    }
