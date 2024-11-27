@@ -1,16 +1,16 @@
 ﻿@using EntityLayer.Concrete
-@model List<MyProjects>
+@model IEnumerable<MyProjects>
 @foreach (var x in Model)
 {
     <div class="col-md-4">
         <a class="text-primary font-weight-bold text-center" href="/MyProjects/ProjectDetails/@x.ProjectID">@x.ProjectName</a>
         <div class="section_1_gallery_grid">
             <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="@x.ProjectIMG1">
-                <div class="">
+                <div class="" style="margin-bottom:2em;">
                     <a href="/MyProjects/ProjectDetails/@x.ProjectID">
                         <img style="min-height:200px;max-height:200px" src="@x.ProjectIMG1" alt=" " class="img-fluid" />
                         <div class="proj_gallery_grid1_pos">
-                            <h3>Click for details</h3>
+                            <h3>Check out the details</h3>
                         </div>
                         <br />
                         <br />
@@ -18,7 +18,7 @@
                             <p>
                                 @if (x.ProjectText1.Length > 160)
                                 {
-                                   <a> @x.ProjectText1.Substring(0, 159)</a>
+                                    <a> @x.ProjectText1.Substring(0, 159)</a>
                                     <a>...</a>
                                 }
                                 else
@@ -27,7 +27,6 @@
                                 }
                             </p>
                         </div>
-                        <hr />
                     </a>
                 </div>
             </a>

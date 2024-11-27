@@ -1,6 +1,6 @@
 ﻿#logo {
     background-color: transparent;
-    padding: 2em;
+    padding: 3em;
     margin-top: 1em;
     border-radius: 0px;
     background-image: url('/web/images/code (1).png');
@@ -26,7 +26,7 @@
 @media (max-width: 768px) {
     #logo {
         margin-top: -0.2em;
-        background-size: 50px;
+        background-size: 70px;
     }
 
     #menu-toggle {
@@ -34,43 +34,7 @@
     }
 }
 
-/*<-!------------->
-*/
 
-/* Başlangıç renkleri ve linear gradient */
-.bg-success {
-    background: linear-gradient(45deg, #4CAF50, #388E3C, #2C6B2F) !important;
-}
-
-.bg-primary {
-    background: linear-gradient(45deg, #2196F3, #0D47A1, #1976D2) !important;
-}
-
-.bg-warning {
-    background: linear-gradient(45deg, #FFEB3B, #FF9800, #FF5722) !important;
-}
-
-.bg-info {
-    background: linear-gradient(45deg, #00B8D4, #008C9E, #006F7A) !important;
-}
-
-.bg-secondary {
-    background: linear-gradient(45deg, #7B1FA2, #8E24AA, #C2185B) !important;
-}
-
-.bg-danger {
-    background: linear-gradient(45deg, #F44336, #B71C1C, #B71C1C) !important;
-}
-
-/* Hover durumunda renk akışı */
-.progress-bar:hover {
-    background-position: 100% 100%; /* Renk geçişi sağlanır */
-}
-
-/* Yavaşça değişim */
-.progress-bar {
-    transition: background-position 1s ease;
-}
 
 .nav-honey a {
     text-decoration: none;

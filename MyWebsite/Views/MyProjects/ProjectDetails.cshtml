@@ -13,13 +13,23 @@
     <link rel="stylesheet" type="text/css" href="~/deskapp2-master/vendors/styles/icon-font.min.css">
     <link rel="stylesheet" type="text/css" href="~/deskapp2-master/src/plugins/fancybox/dist/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="~/deskapp2-master/vendors/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="~/web/images/code.png" />
+    <link rel="stylesheet" href="~/web/css/projectdetailscss.css">
 </head>
 <body>
     <div class="mobile-menu-overlay"></div>
     <div style="padding:0.5em 2em 0em 2em" class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
-                <a href="/Home/Index" class=" font-weight-bolder text-primary h3">Back</a>
+                <nav class="abc main-header d-flex">
+                    <div id="brand" style="padding-top:2em;padding-bottom:2em">
+                        <div>
+                            <a id="logo" href="/Home/Index">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
                 <br />
                 <br />
                 <a style="text-align:center;color:#4a4a4a" class="font-weight-bolder">@Model.ProjectDescription</a>

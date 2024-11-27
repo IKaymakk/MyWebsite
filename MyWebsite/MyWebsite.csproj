@@ -738,6 +738,7 @@
     <Content Include="web\css\bootstrap.css" />
     <Content Include="web\css\customcss.css" />
     <Content Include="web\css\fontawesome-all.css" />
+    <Content Include="web\css\projectdetailscss.css" />
     <Content Include="web\css\roadmap.css" />
     <Content Include="web\css\simpleLightbox.css" />
     <Content Include="web\css\snow.css" />

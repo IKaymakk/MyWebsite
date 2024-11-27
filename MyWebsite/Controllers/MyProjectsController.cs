@@ -18,7 +18,7 @@ namespace MyWebsite.Controllers
         }
         public PartialViewResult ProjectList()
         {
-            var projectlist = pm.ProjectList();
+            var projectlist = pm.ProjectList().OrderByDescending(x => x.ProjectID);
             return PartialView(projectlist);
         }
         public ActionResult ProjectDetails(int id)
