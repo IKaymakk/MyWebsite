@@ -27,7 +27,7 @@ namespace MyWebsite.Controllers
             {
                 FormsAuthentication.SetAuthCookie(admininfo.AdminName, false);
                 Session["AdminName"] = admininfo.AdminName;
-                return RedirectToAction("Index", "ProjectList");
+                return RedirectToAction("ProjectList", "Admin");
             }
             else
             {

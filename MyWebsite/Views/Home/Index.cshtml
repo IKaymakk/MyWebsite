@@ -41,9 +41,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="~/web/images/code.png" />
     <link rel="stylesheet" href="~/web/css/customcss.css">
+    <link rel="stylesheet" href="~/web/css/preloadercss.css">
 
 </head>
 <body>
+    <div style="background-color:black" id="preloader">
+        <img src="~/web/images/code (2).png" alt="Logo" />
+    </div>
+
+
+
     <!-- mian-content -->
     <header class="index-banner" id="home">
         <!-- nav -->
@@ -111,7 +118,7 @@
     <!-- //header -->
     <!--// banner-slider -->
     <!-- banner-bottom-wthree -->
-    <section class="banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
+    <section class="serviceslistgallery banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
         <div class="container">
             <div class="inner-sec-w3ls py-lg-5 py-4">
                 <div class="info-about text-center">
@@ -167,13 +174,12 @@
         </section>*@
     <!-- //experience -->
     <!--gallery  -->
-    <section class="gallery py-md-5 py-3" id="projects">
+    <section class="projectlistgallery gallery py-md-5 py-3" id="projects">
         <div class="gallery-inner container py-md-5 pb-3">
             <h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3 text-center">My Projects</h3>
             <div class="row">
                 @Html.Action("ProjectList", "MyProjects")
             </div>
-            <!-- //gallery container -->
         </div>
     </section>
     <!-- //gallery -->
@@ -401,6 +407,15 @@
                 });
             });
 
+        });
+
+
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            preloader.style.display = "none";
         });
 
     </script>

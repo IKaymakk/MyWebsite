@@ -738,6 +738,7 @@
     <Content Include="web\css\bootstrap.css" />
     <Content Include="web\css\customcss.css" />
     <Content Include="web\css\fontawesome-all.css" />
+    <Content Include="web\css\preloadercss.css" />
     <Content Include="web\css\projectdetailscss.css" />
     <Content Include="web\css\roadmap.css" />
     <Content Include="web\css\simpleLightbox.css" />
@@ -746,7 +747,9 @@
     <Content Include="web\images\banner.jpg" />
     <Content Include="web\images\close.png" />
     <Content Include="web\images\code %281%29.png" />
+    <Content Include="web\images\code %282%29.png" />
     <Content Include="web\images\code.png" />
+    <Content Include="web\images\contactformbg.jpg" />
     <Content Include="web\images\serve.jpg" />
     <Content Include="web\images\xd.jpg" />
     <Content Include="web\images\contact.jpg" />

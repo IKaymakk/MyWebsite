@@ -3,12 +3,19 @@
 @model PagedList.IPagedList<MyService>
 @using EntityLayer.Concrete
 
+
+
+
 @foreach (var x in Model)
 {
+    string colorclass = "";
+    if (x.ServiceID == 3) { colorclass = "fa fa-shield"; }
+    if (x.ServiceID == 2) { colorclass = "fa fa-code"; }
+    if (x.ServiceID == 1) { colorclass = "fa fa-bullseye"; }
     <div class="col-lg-4 service-in text-center" data-aos="flip-up">
         <div class="card">
             <div class="card-body">
-                <i class="fas fa-list-ul mb-4"></i>
+                <i class="@colorclass mb-4"></i>
                 <h5 class="card-title text-uppercase">@x.ServiceName</h5>
                 <p class="card-text">@x.ServiceDescription</p>
             </div>

@@ -36,6 +36,19 @@
 
 /*<-!------------->
 */
+.projectlistgallery {
+    background-image: url('/web/images/contactformbg.jpg'); /* Resmin doğru yolu */
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Tekrarlamayı engeller */
+}
+.serviceslistgallery {
+    background-image: url('/web/images/contactformbg.jpg'); /* Resmin doğru yolu */
+    background-size: cover; /* Resmin tüm alanı kaplamasını sağlar */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Tekrarlamayı engeller */
+}
+
 
 /* Başlangıç renkleri ve linear gradient */
 .bg-success {
